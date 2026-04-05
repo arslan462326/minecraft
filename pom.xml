@@ -3,14 +3,21 @@
          xmlns:xsi="http://w3.org"
          xsi:schemaLocation="http://apache.org http://apache.org">
     <modelVersion>4.0.0</modelVersion>
+
     <groupId>ru.yourname</groupId>
     <artifactId>C4ObsidianFix</artifactId>
     <version>1.0</version>
 
     <repositories>
+        <!-- Основной репозиторий Spigot -->
         <repository>
-            <id>spigot-repo</id>
+            <id>spigotmc-repo</id>
             <url>https://spigotmc.org</url>
+        </repository>
+        <!-- Запасной репозиторий (всегда работает) -->
+        <repository>
+            <id>sonatype</id>
+            <url>https://sonatype.org</url>
         </repository>
     </repositories>
 
@@ -18,7 +25,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.20.1-R0.1-SNAPSHOT</version> <!-- Измени под свою версию -->
+            <version>1.20.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
